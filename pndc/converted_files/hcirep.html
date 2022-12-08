@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>hcirep</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="επικοινωνία-ανθρώπου-υπολογιστή">Επικοινωνία
+Ανθρώπου-Υπολογιστή</h1>
+<p>Οι διαθέσιμες εργασίες είναι αυτές που έχουν τον κωδικό HCI. Για
+όσους χρωστάνε το μάθημα (επι πτυχίω, επαναληπτική εξεταστική) δείτε το
+ιστορικό αυτού του αρχείου κατά την έναρξη του εξαμήνου.</p>
+<blockquote>
+<blockquote>
+<p>Μπορείτε να βρείτε τον πηγαίο κώδικα για τον παρακάτω πίνακα στο
+κουμπί <code>Raw</code> και μετά να τον αντιγράψετε στην αναφορά σας</p>
+</blockquote>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Εβδομάδα</th>
+<th><a href="https://courses-ionio.github.io/help/deliverables/">Όλα τα
+παραδοτέα βρίσκονται στην ίδια σελίδα της τελικής αναφοράς</a> με τα
+προσωπικά στοιχεία σας (Όνομα, ΑΜ, github profile) και μαζί με αυτόν εδώ
+τον πίνακα περιεχομένων</th>
+<th>Σύνδεσμος στην <a
+href="https://github.com/courses-ionio/help/discussions/categories/show-and-tell">εβδομαδιαία
+παρουσίαση προόδου στις συζητήσεις</a></th>
+<th>Αυτοαξιολόγηση σύμφωνα με τα κριτήρια της αντίστοιχης άσκησης</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><a
+href="https://github.com/courses-ionio/hci/discussions/1794">Δημιουργία
+ομάδας</a> + <a href="https://courses-ionio.github.io/help/guide/">Φορκ
+και δημιουργία σελίδας τελικής αναφοράς</a>, <a
+href="https://raw.githubusercontent.com/courses-ionio/hci/master/README.md">προσθήκη
+πίνακα περιεχομένων</a>, <a
+href="https://courses-ionio.github.io/help/intro/">συγγραφή της
+εισαγωγής</a>, αποστολή της εισαγωγής <a
+href="https://github.com/courses-ionio/help/discussions/categories/show-and-tell">για
+σχολιασμό στην συζήτηση</a> και καταγραφή του συνδέσμου συζήτησης δίπλα
+–&gt;</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Άσκηση γραμμής εντολών (arch linux install on VM)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Συμμετοχικό περιεχόμενο A1</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Άσκηση γραμμής εντολών (arch linux install on HW)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Συμμετοχικό περιεχόμενο A2</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Κατασκευή του βιβλίου Α</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Συμμετοχικό περιεχόμενο B1</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Άσκηση γραμμής εντολών</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Συμμετοχικό περιεχόμενο B2</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Άσκηση γραμμής εντολών</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>Κατασκευή του βιβλίου Β</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>Τελική αναφορά*</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<blockquote>
+<p>Η συμπλήρωση της εβδομάδας ορίζεται ως η μέρα πριν το επόμενο μάθημα,
+π.χ., για την 1η εβδομάδα η παράδοση είναι την ημέρα πριν το 2ο μάθημα.
+Η 1η και η 12η εβδομάδα είναι σημαντικές προθεσμίες, γιατί μπορεί να μην
+αντιστοιχούν σε κάποιο ποσοστό βαθμού, αλλά είναι το σημείο αναφοράς για
+όλους τους άλλους βαθμούς. Η άσκηση γραμμής εντολών έχει περισσότερες
+εβδομάδες παραδοτέων για να σας δώσει την ευκαιρία να βελτιώσετε το
+λειτουργικό σύστημα.</p>
+</blockquote>
+</blockquote>
+<p><a href="https://courses-ionio.github.io/help/">Οδηγίες και
+απαντήσεις σε συχνές απορίες</a> για την παράδοση της εργασίας.</p>
+<p><a href="https://github.com/courses-ionio/help/discussions">Νέες
+απορίες και εβδομαδιαία ομαδικότητα</a></p>
+<p><a
+href="https://github.com/courses-ionio/hci/discussions">Ανακοινώσεις</a></p>
+<blockquote>
+<blockquote>
+<p>Πατήστε το κουμπί <code>Watch</code> στην κορυφή αυτής της σελίδας
+για να καθορίσετε τις προτιμήσεις των ειδοποιήσεων, έτσι ώστε να
+λαμβάνετε τουλάχιστον τα νέα για τις συζητήσεις, όπου βρίσκονται όλες οι
+ανακοινώσεις του μαθήματος.</p>
+</blockquote>
+</blockquote>
+<h2 id="syllabus">Syllabus</h2>
+<p><strong>Περιγραφή:</strong> Διάδραση: ορισμός και ιστορική εξέλιξη,
+βασικά στάδια σχεδίασης της διάδρασης, Τεχνολογίες προγραμματισμού της
+διάδρασης, Σύγχρονες εφαρμογές, πειράματα διάδρασης με χρήστες.</p>
+<p><strong>Προαπαιτούμενα:</strong> Εισαγωγή στον προγραμματισμό και
+στους υπολογιστές (linux, github).</p>
+<p><strong>Στόχος:</strong> Ο σκοπός του μαθήματος είναι η μελέτη της
+θεωρίας και η πρακτική εξάσκηση στην σχεδίαση και ανάπτυξη της
+διάδρασης. Συμπληρωματικά της κυρίαρχης θεώρησης της διάδρασης απλά ως
+ευχρηστία, δίνουμε έμφαση κυρίως σε εναλλακτικές θεωρήσεις της
+διάδρασης, όπως αυτές ορίζονται οργανικά από την ατομική μελέτη και
+πρακτική του κάθε φοιτητή. Η θεωρία και οι ασκήσεις καλύπτουν πολλές
+διαφορετικές περιοχές εφαρμογών με έμφαση σε επίκαιρες και διαχρονικές
+εφαρμογές όπως οι εκπαιδευτικές εφαρμογές, οι εφαρμογές γραφείου, και οι
+πολιτισμικές εφαρμογές. Στο τέλος του μαθήματος οι φοιτητές θα έχουν
+αναπτύξει μια κατανόηση της εξέλιξης και της τρέχουσας κατάστασης της
+διάδρασης με τους υπολογιστές και θα έχουν προσαρμόσει το καθημερινό
+ψηφιακό περιβάλλον τους στις δικές τους ανάγκες πληροφόρησης,
+δημιουργίας, και επικοινωνίας με εναλλακτικά εργαλεία. Για τον σκοπό
+αυτό, το βασικό κριτήριο αξιολόγησης είναι η ανάπτυξη διαδραστικού
+τρόπου σκέψης, όπως αυτό αποτυπώνεται στην κατασκευή ενός προσωπικού
+συστήματος διάδρασης.</p>
+<p><strong>Μέθοδος διδασκαλίας:</strong> Συνεργασία, ασκήσεις.</p>
+<p><strong>Συντονιστής συστημάτων τηλεεκπαίδευσης:</strong> <del><a
+href="https://github.com/c15pati">Κωνσταντίνος Πατηνιώτης</a></del></p>
+<p><strong>Κριτήρια βαθμολογίας:</strong> 10% <a
+href="https://courses-ionio.github.io/help/quiz/">εβδομαδιαίο κουίζ</a>
++ 10% <a href="https://courses-ionio.github.io/help/cli/">2 ασκήσεις
+γραμμής εντολών</a> + 20% <a
+href="https://courses-ionio.github.io/help/book">κατασκευή του
+βιβλίου</a> + 20% <a
+href="https://courses-ionio.github.io/help/social">Συμμετοχικό
+εκπαιδευτικό υλικό</a> + 20% <a
+href="https://courses-ionio.github.io/help/teamwork/">ομαδικότητα και
+συνεργασία</a> + 20% <a
+href="https://courses-ionio.github.io/help/classroom/">συμμετοχή στην
+τάξη</a> + 10% <a
+href="https://courses-ionio.github.io/help/bonus/">προαιρετικό
+bonus</a></p>
+<p><strong>Τελική βαθμολόγηση:</strong> Θα πρέπει να έχετε συμπληρώσει
+την βάση σε κάθε ένα από τα παραπάνω κριτήρια. Ορισμένα από τα κριτήρια
+(π.χ. συνεργασία, παρουσιάσεις προόδου) είναι διαθέσιμα μόνο κατά την
+περίοδο του μαθήματος, οπότε θα πρέπει να τα έχετε ήδη ολοκληρώσει κατά
+την τρέχουσα χρονιά, ώστε να υπάρχει δικαίωμα συμμετοχής στην
+επαναληπτική ή στην επί πτυχίω εξέταση. Επίσης, τα βίντεο κουϊζ είναι
+μεν διαθέσιμα και στην επαναληπτική εξεταστική, αλλά είναι δύσκολο να
+απαντηθούν χωρίς τις τακτικές συναντήσεις και τις σχετικές συζητήσεις
+που γίνονται εκεί. Τέλος, στον βαθμό που το μάθημα θα πραγματοποιηθεί
+υποχρεωτικά με φυσική παρουσία (σύμφωνα πάντα με τις οδηγίες του
+υπουργείου και του ιδρύματος), η βαθμολόγηση (στα κριτήρια σύγχρονης
+εκπαίδευσης, π.χ., ατομικές παρουσιάσεις) είναι μόνο δυνατή αν υπάρχει η
+αντίστοιχη φυσική παρουσία, όπως δηλαδή σε μια τελική γραπτή
+εξέταση.</p>
+<p><strong>Βιβλιογραφία:</strong></p>
+<ul>
+<li>Ο Προγραμματισμός της Διάδρασης: Από τον επιτραπέζιο στον κινητό και
+διάχυτο υπολογισμό, Κωνσταντίνος Χωριανόπουλος, ISBN: 9786188242357,
+ΕΥΔΟΞΟΣ: 68371436 κεφάλαια: 1, 2, 7.</li>
+<li><a href="https://pibook.epidro.me">Ο Προγραμματισμός της
+Διάδρασης</a></li>
+<li><a href="http://faculty.washington.edu/ajko/books/uist/">User
+Interface Software Development</a></li>
+<li><a href="http://worrydream.com/MagicInk/">Software design</a></li>
+<li><a href="https://apps.dtic.mil/sti/pdfs/AD0289565.pdf">Augmenting
+human intellect</a>: βιβλίο για μελέτη μπόνους</li>
+</ul>
+<hr />
+<h2 id="οργάνωση-φακέλων">Οργάνωση φακέλων</h2>
+<h2 id="φάκελος-αναφορών">Φάκελος αναφορών</h2>
+<p>Μετά το fork, προσθέστε ένα κλαδί (<code>branch</code>) με το ΑΜ σας
+και μετά (μέσα στον φάκελο <code>projects</code>) προσθέστε
+(<code>add file</code>) έναν φάκελο με το ΑΜ σας (μόνο τον αριθμό, χωρίς
+πρόθεμα, π.χ., 201XXXX) με ένα αρχείο README.md σύμφωνα με τις <a
+href="https://courses-ionio.github.io/help/guide/">αναλυτικές
+οδηγίες</a></p>
+<h3 id="ιστορικός-φάκελος-αναφορών">Ιστορικός φάκελος αναφορών</h3>
+<p>Ο φάκελος αυτός περιέχει τις αναφορές φοιτητών από προηγούμενες
+χρονιές.</p>
+<p>Αν κάποιος φοιτητής στείλει νέα αναφορά τότε η παλιότερη διαγράφεται
+κατά την αρχειοθέτηση (αλλά παραμένει στο ιστορικό του γκιτ).</p>
+<p>Παρακαλώ <strong>μην πειράξετε</strong> το παρόν αρχείο, αλλά
+δημιουργήστε νέο στο φάκελο με τον ΑΜ σας μέσα στον φάκελο projects και
+σύμφωνα με τις <a
+href="https://courses-ionio.github.io/help/guide/">οδηγίες</a>.</p>
+</body>
+</html>
